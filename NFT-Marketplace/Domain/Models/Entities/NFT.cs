@@ -1,0 +1,20 @@
+﻿using Infrastructure.Concrates;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Domain.Models.Entities
+{
+    public class NFT : AuditableEntity
+    {
+        public int Id { get; set; }
+        public int CreatorId { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public double Price { get; set; }
+        public double HighestBid { get; set; }
+        public string ImagePath { get; set; }
+    }
+}
